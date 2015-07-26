@@ -19,9 +19,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    NSArray *fire = @[ @"charizard", @"magmar", @"flareon" ];
-    NSArray *water = @[ @"squirtle", @"polywhirl", @"magikarp", @"mudkip" ];
-    NSArray *grass = @[ @"scyther", @"treecko" ];
+    NSArray *fire  = @[@"charizard", @"magmar", @"flareon"];
+    NSArray *water = @[@"squirtle", @"polywhirl", @"magikarp", @"mudkip"];
+    NSArray *grass = @[@"scyther", @"treecko"];
     
     self.tableData = @[fire, water, grass];
 }
