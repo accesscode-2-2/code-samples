@@ -55,7 +55,6 @@
 - (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
     NSArray *keys = [self.tableData allKeys];
     NSString *key = keys[section];
-    NSArray *pokemonArray = [self.tableData objectForKey:key];
     return key;
 }
 

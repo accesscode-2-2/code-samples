@@ -19,23 +19,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    NSArray *fire = @[
-                      @"charizard",
-                      @"magmar",
-                      @"flareon"
-                      ];
-    
-    NSArray *water = @[
-                       @"squirtle",
-                       @"polywhirl",
-                       @"magikarp",
-                       @"mudkip"
-                       ];
-    
-    NSArray *grass = @[
-                       @"scyther",
-                       @"treecko"
-                       ];
+    NSArray *fire = @[ @"charizard", @"magmar", @"flareon" ];
+    NSArray *water = @[ @"squirtle", @"polywhirl", @"magikarp", @"mudkip" ];
+    NSArray *grass = @[ @"scyther", @"treecko" ];
     
     self.tableData = @[fire, water, grass];
 }
@@ -47,21 +33,18 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    NSArray *arr = self.tableData[section];
-    return arr.count;
+    return ((NSArray *)self.tableData[section]).count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"PokemonCellIdentifier" forIndexPath:indexPath];
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"PokemonIdentifier" forIndexPath:indexPath];
     
-    NSArray *sectionArray = self.tableData[indexPath.section];
-    NSString *pokemonName = sectionArray[indexPath.row];
+    NSArray *pokemonArray = self.tableData[indexPath.section];
     
-    cell.textLabel.text = pokemonName;
+    cell.textLabel.text = (NSString *)pokemonArray[indexPath.row];
     
     return cell;
 }
 
 @end
-

@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8D5514AA1B654E6F00B99129 /* PKPokemonTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D5514A91B654E6F00B99129 /* PKPokemonTableViewController.m */; };
+		8D5514B01B655A3700B99129 /* PKPokemonTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D5514AF1B655A3700B99129 /* PKPokemonTableViewController.m */; };
 		8D89780D1B6491FD00AA557E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D89780C1B6491FD00AA557E /* main.m */; };
 		8D8978101B6491FD00AA557E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D89780F1B6491FD00AA557E /* AppDelegate.m */; };
 		8D8978161B6491FD00AA557E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D8978141B6491FD00AA557E /* Main.storyboard */; };
@@ -27,8 +27,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		8D5514A81B654E6F00B99129 /* PKPokemonTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PKPokemonTableViewController.h; path = ../PKPokemonTableViewController.h; sourceTree = "<group>"; };
-		8D5514A91B654E6F00B99129 /* PKPokemonTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PKPokemonTableViewController.m; path = ../PKPokemonTableViewController.m; sourceTree = "<group>"; };
+		8D5514AE1B655A3700B99129 /* PKPokemonTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PKPokemonTableViewController.h; sourceTree = "<group>"; };
+		8D5514AF1B655A3700B99129 /* PKPokemonTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PKPokemonTableViewController.m; sourceTree = "<group>"; };
 		8D8978071B6491FD00AA557E /* TableView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TableView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D89780B1B6491FD00AA557E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8D89780C1B6491FD00AA557E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -83,8 +83,8 @@
 			children = (
 				8D89780E1B6491FD00AA557E /* AppDelegate.h */,
 				8D89780F1B6491FD00AA557E /* AppDelegate.m */,
-				8D5514A81B654E6F00B99129 /* PKPokemonTableViewController.h */,
-				8D5514A91B654E6F00B99129 /* PKPokemonTableViewController.m */,
+				8D5514AE1B655A3700B99129 /* PKPokemonTableViewController.h */,
+				8D5514AF1B655A3700B99129 /* PKPokemonTableViewController.m */,
 				8D8978141B6491FD00AA557E /* Main.storyboard */,
 				8D8978171B6491FD00AA557E /* Images.xcassets */,
 				8D8978191B6491FD00AA557E /* LaunchScreen.xib */,
@@ -220,7 +220,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8D8978101B6491FD00AA557E /* AppDelegate.m in Sources */,
-				8D5514AA1B654E6F00B99129 /* PKPokemonTableViewController.m in Sources */,
+				8D5514B01B655A3700B99129 /* PKPokemonTableViewController.m in Sources */,
 				8D89780D1B6491FD00AA557E /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
