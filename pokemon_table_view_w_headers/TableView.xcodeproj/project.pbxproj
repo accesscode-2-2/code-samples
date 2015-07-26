@@ -7,14 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8D5514AD1B6550A100B99129 /* PKPokemonTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D5514AC1B6550A100B99129 /* PKPokemonTableViewController.m */; };
 		8D89780D1B6491FD00AA557E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D89780C1B6491FD00AA557E /* main.m */; };
 		8D8978101B6491FD00AA557E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D89780F1B6491FD00AA557E /* AppDelegate.m */; };
 		8D8978161B6491FD00AA557E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D8978141B6491FD00AA557E /* Main.storyboard */; };
 		8D8978181B6491FD00AA557E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D8978171B6491FD00AA557E /* Images.xcassets */; };
 		8D89781B1B6491FD00AA557E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D8978191B6491FD00AA557E /* LaunchScreen.xib */; };
 		8D8978271B6491FE00AA557E /* TableViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D8978261B6491FE00AA557E /* TableViewTests.m */; };
-		8D8978321B64921400AA557E /* PokemonTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D8978311B64921400AA557E /* PokemonTableViewController.m */; };
-		8D8978351B64965400AA557E /* PokemonTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D8978341B64965400AA557E /* PokemonTableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,6 +27,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8D5514AB1B6550A100B99129 /* PKPokemonTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PKPokemonTableViewController.h; sourceTree = "<group>"; };
+		8D5514AC1B6550A100B99129 /* PKPokemonTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PKPokemonTableViewController.m; sourceTree = "<group>"; };
 		8D8978071B6491FD00AA557E /* TableView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TableView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D89780B1B6491FD00AA557E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8D89780C1B6491FD00AA557E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -39,10 +40,6 @@
 		8D8978201B6491FE00AA557E /* TableViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TableViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D8978251B6491FE00AA557E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8D8978261B6491FE00AA557E /* TableViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableViewTests.m; sourceTree = "<group>"; };
-		8D8978301B64921400AA557E /* PokemonTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PokemonTableViewController.h; sourceTree = "<group>"; };
-		8D8978311B64921400AA557E /* PokemonTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PokemonTableViewController.m; sourceTree = "<group>"; };
-		8D8978331B64965400AA557E /* PokemonTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PokemonTableViewCell.h; sourceTree = "<group>"; };
-		8D8978341B64965400AA557E /* PokemonTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PokemonTableViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,10 +83,8 @@
 			children = (
 				8D89780E1B6491FD00AA557E /* AppDelegate.h */,
 				8D89780F1B6491FD00AA557E /* AppDelegate.m */,
-				8D8978301B64921400AA557E /* PokemonTableViewController.h */,
-				8D8978311B64921400AA557E /* PokemonTableViewController.m */,
-				8D8978331B64965400AA557E /* PokemonTableViewCell.h */,
-				8D8978341B64965400AA557E /* PokemonTableViewCell.m */,
+				8D5514AB1B6550A100B99129 /* PKPokemonTableViewController.h */,
+				8D5514AC1B6550A100B99129 /* PKPokemonTableViewController.m */,
 				8D8978141B6491FD00AA557E /* Main.storyboard */,
 				8D8978171B6491FD00AA557E /* Images.xcassets */,
 				8D8978191B6491FD00AA557E /* LaunchScreen.xib */,
@@ -225,9 +220,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				8D8978101B6491FD00AA557E /* AppDelegate.m in Sources */,
-				8D8978351B64965400AA557E /* PokemonTableViewCell.m in Sources */,
+				8D5514AD1B6550A100B99129 /* PKPokemonTableViewController.m in Sources */,
 				8D89780D1B6491FD00AA557E /* main.m in Sources */,
-				8D8978321B64921400AA557E /* PokemonTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -422,6 +416,7 @@
 				8D89782C1B6491FE00AA557E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8D89782D1B6491FE00AA557E /* Build configuration list for PBXNativeTarget "TableViewTests" */ = {
 			isa = XCConfigurationList;
@@ -430,6 +425,7 @@
 				8D89782F1B6491FE00AA557E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

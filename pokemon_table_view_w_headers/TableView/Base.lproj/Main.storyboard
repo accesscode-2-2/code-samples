@@ -7,13 +7,13 @@
         <!--Pokemon Table View Controller-->
         <scene sceneID="lic-t1-xhw">
             <objects>
-                <tableViewController id="x2y-cM-D22" customClass="PokemonTableViewController" sceneMemberID="viewController">
+                <tableViewController id="x2y-cM-D22" customClass="PKPokemonTableViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="Xmw-Qo-f2l">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PokemonIdentifier" id="2rH-O0-UOR" customClass="PokemonTableViewCell">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PokemonCellIdentifier" id="2rH-O0-UOR" customClass="PokemonTableViewCell">
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="2rH-O0-UOR" id="7YM-vH-H18">
                                     <autoresizingMask key="autoresizingMask"/>

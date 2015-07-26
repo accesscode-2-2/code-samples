@@ -1,5 +1,5 @@
 //
-//  PokemonTableViewCell.h
+//  PKPokemonTableViewController.h
 //  TableView
 //
 //  Created by Michael Kavouras on 7/26/15.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface PokemonTableViewCell : UITableViewCell
+@interface PKPokemonTableViewController : UITableViewController
 
 @end
