@@ -10,7 +10,7 @@
 
 @interface PKPokemonTableViewController ()
 
-@property (nonatomic) NSArray *tableData;
+@property (nonatomic) NSDictionary *tableData;
 
 @end
 
@@ -19,48 +19,44 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    NSArray *fire = @[
-                      @"charizard",
-                      @"magmar",
-                      @"flareon"
-                      ];
+    NSArray *fire = @[ @"charizard", @"magmar", @"flareon" ];
+    NSArray *water = @[ @"squirtle", @"polywhirl", @"magikarp", @"mudkip" ];
+    NSArray *grass = @[ @"scyther", @"treecko" ];
     
-    NSArray *water = @[
-                       @"squirtle",
-                       @"polywhirl",
-                       @"magikarp",
-                       @"mudkip"
-                       ];
-    
-    NSArray *grass = @[
-                       @"scyther",
-                       @"treecko"
-                       ];
-    
-    self.tableData = @[fire, water, grass];
+    self.tableData = @{@"fire" : fire, @"water" : water, @"grass" : grass};
 }
 
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    return self.tableData.count;
+    return [self.tableData allKeys].count;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    NSArray *arr = self.tableData[section];
-    return arr.count;
+    NSArray *keys = [self.tableData allKeys];
+    NSString *key = keys[section];
+    NSArray *pokemonArray = [self.tableData objectForKey:key];
+    return pokemonArray.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"PokemonCellIdentifier" forIndexPath:indexPath];
     
-    NSArray *sectionArray = self.tableData[indexPath.section];
-    NSString *pokemonName = sectionArray[indexPath.row];
+    NSArray *keys = [self.tableData allKeys];
+    NSString *key = keys[indexPath.section];
+    NSArray *pokemonArray = [self.tableData objectForKey:key];
     
-    cell.textLabel.text = pokemonName;
+    cell.textLabel.text = (NSString *)pokemonArray[indexPath.row];
     
     return cell;
+}
+
+- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
+    NSArray *keys = [self.tableData allKeys];
+    NSString *key = keys[section];
+    NSArray *pokemonArray = [self.tableData objectForKey:key];
+    return key;
 }
 
 
