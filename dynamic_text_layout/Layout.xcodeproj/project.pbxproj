@@ -27,6 +27,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8D088EF01B6486BF0027341E /* TouchBabyDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TouchBabyDelegate.h; sourceTree = "<group>"; };
 		8DB4D8531B5F08F80044A6EE /* Layout.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Layout.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DB4D8571B5F08F80044A6EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8DB4D8581B5F08F80044A6EE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -86,6 +87,7 @@
 				8DB4D85D1B5F08F80044A6EE /* ViewController.h */,
 				8DB4D85E1B5F08F80044A6EE /* ViewController.m */,
 				8DB4D8601B5F08F80044A6EE /* Main.storyboard */,
+				8D088EF01B6486BF0027341E /* TouchBabyDelegate.h */,
 				8DB4D8631B5F08F80044A6EE /* Images.xcassets */,
 				8DB4D8651B5F08F80044A6EE /* LaunchScreen.xib */,
 				8DB4D8561B5F08F80044A6EE /* Supporting Files */,
@@ -416,6 +418,7 @@
 				8DB4D8781B5F08F80044A6EE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8DB4D8791B5F08F80044A6EE /* Build configuration list for PBXNativeTarget "LayoutTests" */ = {
 			isa = XCConfigurationList;
@@ -424,6 +427,7 @@
 				8DB4D87B1B5F08F80044A6EE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
