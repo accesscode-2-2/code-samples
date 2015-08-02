@@ -9,11 +9,13 @@
 /* Begin PBXBuildFile section */
 		8D7213DF1B6C710300274140 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D7213DE1B6C710300274140 /* main.m */; };
 		8D7213E21B6C710300274140 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D7213E11B6C710300274140 /* AppDelegate.m */; };
-		8D7213E51B6C710300274140 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D7213E41B6C710300274140 /* ViewController.m */; };
 		8D7213E81B6C710300274140 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D7213E61B6C710300274140 /* Main.storyboard */; };
 		8D7213EA1B6C710300274140 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D7213E91B6C710300274140 /* Images.xcassets */; };
 		8D7213ED1B6C710300274140 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D7213EB1B6C710300274140 /* LaunchScreen.xib */; };
 		8D7213F91B6C710300274140 /* PKPokedexTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D7213F81B6C710300274140 /* PKPokedexTests.m */; };
+		8D7214041B6D0D3F00274140 /* PKPokemonTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D7214031B6D0D3F00274140 /* PKPokemonTableViewController.m */; };
+		8D7214071B6D16BF00274140 /* PKPokedex.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D7214061B6D16BF00274140 /* PKPokedex.m */; };
+		8D96EF001B6D490C007F0A96 /* PKDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D96EEFF1B6D490C007F0A96 /* PKDetailViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,14 +34,18 @@
 		8D7213DE1B6C710300274140 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		8D7213E01B6C710300274140 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		8D7213E11B6C710300274140 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		8D7213E31B6C710300274140 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		8D7213E41B6C710300274140 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		8D7213E71B6C710300274140 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8D7213E91B6C710300274140 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		8D7213EC1B6C710300274140 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		8D7213F21B6C710300274140 /* PKPokedexTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PKPokedexTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D7213F71B6C710300274140 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8D7213F81B6C710300274140 /* PKPokedexTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PKPokedexTests.m; sourceTree = "<group>"; };
+		8D7214021B6D0D3F00274140 /* PKPokemonTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PKPokemonTableViewController.h; sourceTree = "<group>"; };
+		8D7214031B6D0D3F00274140 /* PKPokemonTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PKPokemonTableViewController.m; sourceTree = "<group>"; };
+		8D7214051B6D16BF00274140 /* PKPokedex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PKPokedex.h; sourceTree = "<group>"; };
+		8D7214061B6D16BF00274140 /* PKPokedex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PKPokedex.m; sourceTree = "<group>"; };
+		8D96EEFE1B6D490C007F0A96 /* PKDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PKDetailViewController.h; sourceTree = "<group>"; };
+		8D96EEFF1B6D490C007F0A96 /* PKDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PKDetailViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,8 +89,12 @@
 			children = (
 				8D7213E01B6C710300274140 /* AppDelegate.h */,
 				8D7213E11B6C710300274140 /* AppDelegate.m */,
-				8D7213E31B6C710300274140 /* ViewController.h */,
-				8D7213E41B6C710300274140 /* ViewController.m */,
+				8D7214021B6D0D3F00274140 /* PKPokemonTableViewController.h */,
+				8D7214031B6D0D3F00274140 /* PKPokemonTableViewController.m */,
+				8D96EEFE1B6D490C007F0A96 /* PKDetailViewController.h */,
+				8D96EEFF1B6D490C007F0A96 /* PKDetailViewController.m */,
+				8D7214051B6D16BF00274140 /* PKPokedex.h */,
+				8D7214061B6D16BF00274140 /* PKPokedex.m */,
 				8D7213E61B6C710300274140 /* Main.storyboard */,
 				8D7213E91B6C710300274140 /* Images.xcassets */,
 				8D7213EB1B6C710300274140 /* LaunchScreen.xib */,
@@ -219,8 +229,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8D7213E51B6C710300274140 /* ViewController.m in Sources */,
 				8D7213E21B6C710300274140 /* AppDelegate.m in Sources */,
+				8D7214071B6D16BF00274140 /* PKPokedex.m in Sources */,
+				8D96EF001B6D490C007F0A96 /* PKDetailViewController.m in Sources */,
+				8D7214041B6D0D3F00274140 /* PKPokemonTableViewController.m in Sources */,
 				8D7213DF1B6C710300274140 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -416,6 +428,7 @@
 				8D7213FE1B6C710300274140 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8D7213FF1B6C710300274140 /* Build configuration list for PBXNativeTarget "PKPokedexTests" */ = {
 			isa = XCConfigurationList;
@@ -424,6 +437,7 @@
 				8D7214011B6C710300274140 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
