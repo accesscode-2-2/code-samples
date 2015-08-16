@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="LwU-mp-oWn">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="g4E-Nu-zlS">
+            <objects>
+                <navigationController id="LwU-mp-oWn" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="AHF-w0-3Ks">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="p0o-JQ-F6E" kind="relationship" relationship="rootViewController" id="vJT-3Q-bi7"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aqG-Rw-Y3a" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-710" y="142"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="ELq-Pm-FXA">
+            <objects>
+                <viewController id="p0o-JQ-F6E" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="7w8-qu-Nek"/>
+                        <viewControllerLayoutGuide type="bottom" id="043-o8-6Nn"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="2Z0-kz-NRj">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.52276508608628558" green="0.56082456551589754" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="38X-Oj-Jrx">
+                        <barButtonItem key="leftBarButtonItem" title="Left" id="zTY-L2-GmO">
+                            <connections>
+                                <action selector="leftButtonTapped:" destination="p0o-JQ-F6E" id="DZ2-cl-xJJ"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Right" id="8Br-ji-Fsa">
+                            <connections>
+                                <action selector="rightButtonTapped:" destination="p0o-JQ-F6E" id="EwN-Rm-Fjh"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5xz-yN-vLV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-56" y="142"/>
+        </scene>
+        <!--Table View Controller-->
+        <scene sceneID="iZI-07-2lq">
+            <objects>
+                <tableViewController storyboardIdentifier="TableViewController" id="SwJ-pa-Hh6" customClass="MKTableViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="r75-eq-zcC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="aeT-Hc-dfj">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="aeT-Hc-dfj" id="7PV-Mk-NcY">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="SwJ-pa-Hh6" id="E4Q-iD-9Pq"/>
+                            <outlet property="delegate" destination="SwJ-pa-Hh6" id="IE7-6w-VZ2"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="73z-Fm-biq">
+                        <barButtonItem key="leftBarButtonItem" title="Item" id="XL1-Pq-aY9">
+                            <connections>
+                                <action selector="leftBarButtonTapped:" destination="SwJ-pa-Hh6" id="iyo-OE-CYL"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Item" id="Ejk-Gx-u2g">
+                            <connections>
+                                <action selector="rightBarButtonTapped:" destination="SwJ-pa-Hh6" id="FX0-vA-vHR"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UGb-pC-0A9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="624" y="142"/>
+        </scene>
+    </scenes>
+</document>
