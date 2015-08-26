@@ -71,4 +71,27 @@
     return cell;
 }
 
+#pragma mark - UITableViewDelegate
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    // get the data that we're going to pass
+    WFCountry *country = self.countries[indexPath.row];
+    
+    // declare where your sending the data
+    // if initializing from storyboard, make sure the storyboard id
+    // is set in the attributes inspector
+    FlagDetailViewController *detailViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"FlagDetailController"];
+    
+    // pass the data over
+    // make sure that the destination view controller has
+    // a property to hold the data that you're passing
+    detailViewController.country = country;
+    
+    // presents the detail view controller
+    [self.navigationController pushViewController:detailViewController animated:YES];
+    
+    
+}
+
 @end
