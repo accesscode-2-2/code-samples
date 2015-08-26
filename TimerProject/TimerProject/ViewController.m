@@ -10,7 +10,10 @@
 
 @interface ViewController ()
 
+
 @property (weak, nonatomic) IBOutlet UILabel *timerLabel;
+
+@property (nonatomic) NSDate *demoDay;
 
 @end
 
@@ -18,6 +21,11 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+    [formatter setDateFormat:@"yyyy MM dd"];
+    
+    self.demoDay = [formatter dateFromString:@"2015 09 03"];
     
     self.timerLabel.text = @"0";
     
@@ -28,6 +36,16 @@
     // make sure we add the new timer to the run loop so that it
     // executes
     [[NSRunLoop currentRunLoop] addTimer:timer forMode:NSDefaultRunLoopMode];
+    
+    
+    NSTimer *demoDayTimer = [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(fireDemoDayTimer:) userInfo:nil repeats:YES];
+}
+
+- (void)fireDemoDayTimer:(NSTimer *)timer {
+    NSDate *now = [[NSDate alloc] init];
+    NSTimeInterval timeLeft = [self.demoDay timeIntervalSinceDate:now];
+    
+    NSLog(@"%f", timeLeft);
 }
 
 - (void)timerFired:(NSTimer *)timer {
