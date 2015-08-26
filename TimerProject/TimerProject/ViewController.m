@@ -22,9 +22,12 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    // create a date formatter so that you can create an NSDate
+    // object from a string
     NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
     [formatter setDateFormat:@"yyyy MM dd"];
     
+    // set the demo day property (NSDate) to the date "2015 09 03"
     self.demoDay = [formatter dateFromString:@"2015 09 03"];
     
     self.timerLabel.text = @"0";
@@ -38,13 +41,21 @@
     [[NSRunLoop currentRunLoop] addTimer:timer forMode:NSDefaultRunLoopMode];
     
     
+    // set up a timer to fire once ever second
     NSTimer *demoDayTimer = [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(fireDemoDayTimer:) userInfo:nil repeats:YES];
 }
 
 - (void)fireDemoDayTimer:(NSTimer *)timer {
+    
+    // get the current day and time
     NSDate *now = [[NSDate alloc] init];
+    
+    // calculate the amount of time between now and self.demoDay
+    // in seconds
     NSTimeInterval timeLeft = [self.demoDay timeIntervalSinceDate:now];
     
+    // this is where you would format the time and display it on
+    // the screen
     NSLog(@"%f", timeLeft);
 }
 
