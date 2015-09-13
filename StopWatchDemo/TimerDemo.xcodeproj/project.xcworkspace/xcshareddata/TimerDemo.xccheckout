@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>41993B3B-E5E1-458C-9D93-1CC8C7A27FF9</string>
+	<key>IDESourceControlProjectName</key>
+	<string>TimerDemo</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>8ECD69FDC65196609C26047F6D172695B38F0BC0</key>
+		<string>https://github.com/accesscode-2-2/code-samples.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>StopWatchDemo/TimerDemo.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>8ECD69FDC65196609C26047F6D172695B38F0BC0</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/accesscode-2-2/code-samples.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>8ECD69FDC65196609C26047F6D172695B38F0BC0</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>8ECD69FDC65196609C26047F6D172695B38F0BC0</string>
+			<key>IDESourceControlWCCName</key>
+			<string>code-samples</string>
+		</dict>
+	</array>
+</dict>
+</plist>
