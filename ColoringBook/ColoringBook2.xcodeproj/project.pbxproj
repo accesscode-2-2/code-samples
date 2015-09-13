@@ -1,0 +1,538 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8D9BB83E1BA5F48D00ECE20B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D9BB83D1BA5F48D00ECE20B /* main.m */; };
+		8D9BB8411BA5F48D00ECE20B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D9BB8401BA5F48D00ECE20B /* AppDelegate.m */; };
+		8D9BB8441BA5F48D00ECE20B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D9BB8431BA5F48D00ECE20B /* ViewController.m */; };
+		8D9BB8471BA5F48D00ECE20B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D9BB8451BA5F48D00ECE20B /* Main.storyboard */; };
+		8D9BB8491BA5F48D00ECE20B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D9BB8481BA5F48D00ECE20B /* Assets.xcassets */; };
+		8D9BB84C1BA5F48D00ECE20B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D9BB84A1BA5F48D00ECE20B /* LaunchScreen.storyboard */; };
+		8D9BB8571BA5F48D00ECE20B /* ColoringBook2Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D9BB8561BA5F48D00ECE20B /* ColoringBook2Tests.m */; };
+		8D9BB8621BA5F48D00ECE20B /* ColoringBook2UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D9BB8611BA5F48D00ECE20B /* ColoringBook2UITests.m */; };
+		8D9BB8711BA5F93200ECE20B /* ColorPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D9BB8701BA5F93200ECE20B /* ColorPickerViewController.m */; settings = {ASSET_TAGS = (); }; };
+		8DE967071BA6160F000BBF29 /* BorderedButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DE967061BA6160F000BBF29 /* BorderedButton.m */; settings = {ASSET_TAGS = (); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8D9BB8531BA5F48D00ECE20B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8D9BB8311BA5F48D00ECE20B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8D9BB8381BA5F48D00ECE20B;
+			remoteInfo = ColoringBook2;
+		};
+		8D9BB85E1BA5F48D00ECE20B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8D9BB8311BA5F48D00ECE20B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8D9BB8381BA5F48D00ECE20B;
+			remoteInfo = ColoringBook2;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8D9BB8391BA5F48D00ECE20B /* ColoringBook2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ColoringBook2.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D9BB83D1BA5F48D00ECE20B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8D9BB83F1BA5F48D00ECE20B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		8D9BB8401BA5F48D00ECE20B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		8D9BB8421BA5F48D00ECE20B /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		8D9BB8431BA5F48D00ECE20B /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		8D9BB8461BA5F48D00ECE20B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8D9BB8481BA5F48D00ECE20B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8D9BB84B1BA5F48D00ECE20B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8D9BB84D1BA5F48D00ECE20B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8D9BB8521BA5F48D00ECE20B /* ColoringBook2Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ColoringBook2Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D9BB8561BA5F48D00ECE20B /* ColoringBook2Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ColoringBook2Tests.m; sourceTree = "<group>"; };
+		8D9BB8581BA5F48D00ECE20B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8D9BB85D1BA5F48D00ECE20B /* ColoringBook2UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ColoringBook2UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D9BB8611BA5F48D00ECE20B /* ColoringBook2UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ColoringBook2UITests.m; sourceTree = "<group>"; };
+		8D9BB8631BA5F48D00ECE20B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8D9BB86F1BA5F93200ECE20B /* ColorPickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorPickerViewController.h; sourceTree = "<group>"; };
+		8D9BB8701BA5F93200ECE20B /* ColorPickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ColorPickerViewController.m; sourceTree = "<group>"; };
+		8D9BB8721BA6018100ECE20B /* ColorPickerViewControllerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorPickerViewControllerDelegate.h; sourceTree = "<group>"; };
+		8DE967051BA6160F000BBF29 /* BorderedButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BorderedButton.h; sourceTree = "<group>"; };
+		8DE967061BA6160F000BBF29 /* BorderedButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BorderedButton.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8D9BB8361BA5F48D00ECE20B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8D9BB84F1BA5F48D00ECE20B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8D9BB85A1BA5F48D00ECE20B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8D9BB8301BA5F48D00ECE20B = {
+			isa = PBXGroup;
+			children = (
+				8D9BB83B1BA5F48D00ECE20B /* ColoringBook2 */,
+				8D9BB8551BA5F48D00ECE20B /* ColoringBook2Tests */,
+				8D9BB8601BA5F48D00ECE20B /* ColoringBook2UITests */,
+				8D9BB83A1BA5F48D00ECE20B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8D9BB83A1BA5F48D00ECE20B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8D9BB8391BA5F48D00ECE20B /* ColoringBook2.app */,
+				8D9BB8521BA5F48D00ECE20B /* ColoringBook2Tests.xctest */,
+				8D9BB85D1BA5F48D00ECE20B /* ColoringBook2UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8D9BB83B1BA5F48D00ECE20B /* ColoringBook2 */ = {
+			isa = PBXGroup;
+			children = (
+				8D9BB83F1BA5F48D00ECE20B /* AppDelegate.h */,
+				8D9BB8401BA5F48D00ECE20B /* AppDelegate.m */,
+				8D9BB8421BA5F48D00ECE20B /* ViewController.h */,
+				8D9BB8431BA5F48D00ECE20B /* ViewController.m */,
+				8D9BB86F1BA5F93200ECE20B /* ColorPickerViewController.h */,
+				8D9BB8701BA5F93200ECE20B /* ColorPickerViewController.m */,
+				8DE967051BA6160F000BBF29 /* BorderedButton.h */,
+				8DE967061BA6160F000BBF29 /* BorderedButton.m */,
+				8D9BB8721BA6018100ECE20B /* ColorPickerViewControllerDelegate.h */,
+				8D9BB8451BA5F48D00ECE20B /* Main.storyboard */,
+				8D9BB8481BA5F48D00ECE20B /* Assets.xcassets */,
+				8D9BB84A1BA5F48D00ECE20B /* LaunchScreen.storyboard */,
+				8D9BB84D1BA5F48D00ECE20B /* Info.plist */,
+				8D9BB83C1BA5F48D00ECE20B /* Supporting Files */,
+			);
+			path = ColoringBook2;
+			sourceTree = "<group>";
+		};
+		8D9BB83C1BA5F48D00ECE20B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8D9BB83D1BA5F48D00ECE20B /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8D9BB8551BA5F48D00ECE20B /* ColoringBook2Tests */ = {
+			isa = PBXGroup;
+			children = (
+				8D9BB8561BA5F48D00ECE20B /* ColoringBook2Tests.m */,
+				8D9BB8581BA5F48D00ECE20B /* Info.plist */,
+			);
+			path = ColoringBook2Tests;
+			sourceTree = "<group>";
+		};
+		8D9BB8601BA5F48D00ECE20B /* ColoringBook2UITests */ = {
+			isa = PBXGroup;
+			children = (
+				8D9BB8611BA5F48D00ECE20B /* ColoringBook2UITests.m */,
+				8D9BB8631BA5F48D00ECE20B /* Info.plist */,
+			);
+			path = ColoringBook2UITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8D9BB8381BA5F48D00ECE20B /* ColoringBook2 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8D9BB8661BA5F48D00ECE20B /* Build configuration list for PBXNativeTarget "ColoringBook2" */;
+			buildPhases = (
+				8D9BB8351BA5F48D00ECE20B /* Sources */,
+				8D9BB8361BA5F48D00ECE20B /* Frameworks */,
+				8D9BB8371BA5F48D00ECE20B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ColoringBook2;
+			productName = ColoringBook2;
+			productReference = 8D9BB8391BA5F48D00ECE20B /* ColoringBook2.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8D9BB8511BA5F48D00ECE20B /* ColoringBook2Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8D9BB8691BA5F48D00ECE20B /* Build configuration list for PBXNativeTarget "ColoringBook2Tests" */;
+			buildPhases = (
+				8D9BB84E1BA5F48D00ECE20B /* Sources */,
+				8D9BB84F1BA5F48D00ECE20B /* Frameworks */,
+				8D9BB8501BA5F48D00ECE20B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8D9BB8541BA5F48D00ECE20B /* PBXTargetDependency */,
+			);
+			name = ColoringBook2Tests;
+			productName = ColoringBook2Tests;
+			productReference = 8D9BB8521BA5F48D00ECE20B /* ColoringBook2Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		8D9BB85C1BA5F48D00ECE20B /* ColoringBook2UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8D9BB86C1BA5F48D00ECE20B /* Build configuration list for PBXNativeTarget "ColoringBook2UITests" */;
+			buildPhases = (
+				8D9BB8591BA5F48D00ECE20B /* Sources */,
+				8D9BB85A1BA5F48D00ECE20B /* Frameworks */,
+				8D9BB85B1BA5F48D00ECE20B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8D9BB85F1BA5F48D00ECE20B /* PBXTargetDependency */,
+			);
+			name = ColoringBook2UITests;
+			productName = ColoringBook2UITests;
+			productReference = 8D9BB85D1BA5F48D00ECE20B /* ColoringBook2UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8D9BB8311BA5F48D00ECE20B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "Mike Kavouras";
+				TargetAttributes = {
+					8D9BB8381BA5F48D00ECE20B = {
+						CreatedOnToolsVersion = 7.0;
+					};
+					8D9BB8511BA5F48D00ECE20B = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = 8D9BB8381BA5F48D00ECE20B;
+					};
+					8D9BB85C1BA5F48D00ECE20B = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = 8D9BB8381BA5F48D00ECE20B;
+					};
+				};
+			};
+			buildConfigurationList = 8D9BB8341BA5F48D00ECE20B /* Build configuration list for PBXProject "ColoringBook2" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8D9BB8301BA5F48D00ECE20B;
+			productRefGroup = 8D9BB83A1BA5F48D00ECE20B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8D9BB8381BA5F48D00ECE20B /* ColoringBook2 */,
+				8D9BB8511BA5F48D00ECE20B /* ColoringBook2Tests */,
+				8D9BB85C1BA5F48D00ECE20B /* ColoringBook2UITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8D9BB8371BA5F48D00ECE20B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D9BB84C1BA5F48D00ECE20B /* LaunchScreen.storyboard in Resources */,
+				8D9BB8491BA5F48D00ECE20B /* Assets.xcassets in Resources */,
+				8D9BB8471BA5F48D00ECE20B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8D9BB8501BA5F48D00ECE20B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8D9BB85B1BA5F48D00ECE20B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8D9BB8351BA5F48D00ECE20B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D9BB8441BA5F48D00ECE20B /* ViewController.m in Sources */,
+				8D9BB8411BA5F48D00ECE20B /* AppDelegate.m in Sources */,
+				8D9BB8711BA5F93200ECE20B /* ColorPickerViewController.m in Sources */,
+				8DE967071BA6160F000BBF29 /* BorderedButton.m in Sources */,
+				8D9BB83E1BA5F48D00ECE20B /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8D9BB84E1BA5F48D00ECE20B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D9BB8571BA5F48D00ECE20B /* ColoringBook2Tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8D9BB8591BA5F48D00ECE20B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D9BB8621BA5F48D00ECE20B /* ColoringBook2UITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8D9BB8541BA5F48D00ECE20B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8D9BB8381BA5F48D00ECE20B /* ColoringBook2 */;
+			targetProxy = 8D9BB8531BA5F48D00ECE20B /* PBXContainerItemProxy */;
+		};
+		8D9BB85F1BA5F48D00ECE20B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8D9BB8381BA5F48D00ECE20B /* ColoringBook2 */;
+			targetProxy = 8D9BB85E1BA5F48D00ECE20B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8D9BB8451BA5F48D00ECE20B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8D9BB8461BA5F48D00ECE20B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8D9BB84A1BA5F48D00ECE20B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8D9BB84B1BA5F48D00ECE20B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8D9BB8641BA5F48D00ECE20B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		8D9BB8651BA5F48D00ECE20B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8D9BB8671BA5F48D00ECE20B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ColoringBook2/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mikekavouras.ColoringBook2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8D9BB8681BA5F48D00ECE20B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ColoringBook2/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mikekavouras.ColoringBook2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		8D9BB86A1BA5F48D00ECE20B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = ColoringBook2Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mikekavouras.ColoringBook2Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ColoringBook2.app/ColoringBook2";
+			};
+			name = Debug;
+		};
+		8D9BB86B1BA5F48D00ECE20B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = ColoringBook2Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mikekavouras.ColoringBook2Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ColoringBook2.app/ColoringBook2";
+			};
+			name = Release;
+		};
+		8D9BB86D1BA5F48D00ECE20B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = ColoringBook2UITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mikekavouras.ColoringBook2UITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = ColoringBook2;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		8D9BB86E1BA5F48D00ECE20B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = ColoringBook2UITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mikekavouras.ColoringBook2UITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = ColoringBook2;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8D9BB8341BA5F48D00ECE20B /* Build configuration list for PBXProject "ColoringBook2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8D9BB8641BA5F48D00ECE20B /* Debug */,
+				8D9BB8651BA5F48D00ECE20B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8D9BB8661BA5F48D00ECE20B /* Build configuration list for PBXNativeTarget "ColoringBook2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8D9BB8671BA5F48D00ECE20B /* Debug */,
+				8D9BB8681BA5F48D00ECE20B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8D9BB8691BA5F48D00ECE20B /* Build configuration list for PBXNativeTarget "ColoringBook2Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8D9BB86A1BA5F48D00ECE20B /* Debug */,
+				8D9BB86B1BA5F48D00ECE20B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8D9BB86C1BA5F48D00ECE20B /* Build configuration list for PBXNativeTarget "ColoringBook2UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8D9BB86D1BA5F48D00ECE20B /* Debug */,
+				8D9BB86E1BA5F48D00ECE20B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8D9BB8311BA5F48D00ECE20B /* Project object */;
+}
