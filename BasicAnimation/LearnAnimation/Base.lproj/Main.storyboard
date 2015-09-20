@@ -35,7 +35,7 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="viewToAnimate" destination="zkE-Bx-LLV" id="ylW-8A-neu"/>
+                        <outlet property="viewToAnimate" destination="zkE-Bx-LLV" id="snB-hT-RlA"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
