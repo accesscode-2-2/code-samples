@@ -9,8 +9,8 @@
 #import "InstagramPostViewController.h"
 
 @interface InstagramPostViewController ()
-@property (weak, nonatomic) IBOutlet UIImageView *imageView;
 
+@property (weak, nonatomic) IBOutlet UIImageView *imageView;
 
 @end
 

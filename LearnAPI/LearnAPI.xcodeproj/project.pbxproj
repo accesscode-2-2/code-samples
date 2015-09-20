@@ -15,7 +15,8 @@
 		8DC2BDB01BADDD5F00B7736E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8DC2BDAE1BADDD5F00B7736E /* LaunchScreen.storyboard */; };
 		8DC2BDBB1BADDD5F00B7736E /* LearnAPITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DC2BDBA1BADDD5F00B7736E /* LearnAPITests.m */; };
 		8DC2BDC61BADDD5F00B7736E /* LearnAPIUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DC2BDC51BADDD5F00B7736E /* LearnAPIUITests.m */; };
-		8DC2BDD51BAE06DC00B7736E /* InstagramPostViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DC2BDD41BAE06DC00B7736E /* InstagramPostViewController.m */; settings = {ASSET_TAGS = (); }; };
+		8DC2BDD51BAE06DC00B7736E /* InstagramPostViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DC2BDD41BAE06DC00B7736E /* InstagramPostViewController.m */; };
+		8DD9A67D1BAF00A4000962E7 /* APIManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DD9A67C1BAF00A4000962E7 /* APIManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,8 @@
 		8DC2BDC71BADDD5F00B7736E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8DC2BDD31BAE06DC00B7736E /* InstagramPostViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InstagramPostViewController.h; sourceTree = "<group>"; };
 		8DC2BDD41BAE06DC00B7736E /* InstagramPostViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InstagramPostViewController.m; sourceTree = "<group>"; };
+		8DD9A67B1BAF00A4000962E7 /* APIManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APIManager.h; sourceTree = "<group>"; };
+		8DD9A67C1BAF00A4000962E7 /* APIManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APIManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +113,8 @@
 				8DC2BDA71BADDD5F00B7736E /* ViewController.m */,
 				8DC2BDD31BAE06DC00B7736E /* InstagramPostViewController.h */,
 				8DC2BDD41BAE06DC00B7736E /* InstagramPostViewController.m */,
+				8DD9A67B1BAF00A4000962E7 /* APIManager.h */,
+				8DD9A67C1BAF00A4000962E7 /* APIManager.m */,
 				8DC2BDA91BADDD5F00B7736E /* Main.storyboard */,
 				8DC2BDAC1BADDD5F00B7736E /* Assets.xcassets */,
 				8DC2BDAE1BADDD5F00B7736E /* LaunchScreen.storyboard */,
@@ -279,6 +284,7 @@
 				8DC2BDA51BADDD5F00B7736E /* AppDelegate.m in Sources */,
 				8DC2BDA21BADDD5F00B7736E /* main.m in Sources */,
 				8DC2BDD51BAE06DC00B7736E /* InstagramPostViewController.m in Sources */,
+				8DD9A67D1BAF00A4000962E7 /* APIManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -502,6 +508,7 @@
 				8DC2BDCC1BADDD5F00B7736E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8DC2BDCD1BADDD5F00B7736E /* Build configuration list for PBXNativeTarget "LearnAPITests" */ = {
 			isa = XCConfigurationList;
@@ -510,6 +517,7 @@
 				8DC2BDCF1BADDD5F00B7736E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8DC2BDD01BADDD5F00B7736E /* Build configuration list for PBXNativeTarget "LearnAPIUITests" */ = {
 			isa = XCConfigurationList;
@@ -518,6 +526,7 @@
 				8DC2BDD21BADDD5F00B7736E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

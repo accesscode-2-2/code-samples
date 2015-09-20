@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "InstagramPostViewController.h"
+#import "APIManager.h"
 
 @interface ViewController () <UITableViewDataSource>
 
@@ -28,22 +29,6 @@
     
 }
 
-- (void)GETRequestWithURL:(NSURL *)URL
-        completionHandler:(void(^)(NSData *data, NSURLResponse *response, NSError *error))completionHandler {
-    
-    NSURLSession *session = [NSURLSession sharedSession];
-    
-    NSURLSessionDataTask *task = [session dataTaskWithURL:URL completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
-        
-        dispatch_async(dispatch_get_main_queue(), ^{
-          completionHandler(data, response, error);
-        });
-    }];
-    
-    [task resume];
-    
-}
-
 - (IBAction)refreshTableView:(id)sender {
     [self fetchInstagramData];
 }
@@ -54,7 +39,7 @@
     NSURL *instagramURL = [NSURL URLWithString:@"https://api.instagram.com/v1/tags/nofilter/media/recent?client_id=ac0ee52ebb154199bfabfb15b498c067"];
     
     // fetch data from the instagram endpoint and print json response
-    [self GETRequestWithURL:instagramURL completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
+    [APIManager GETRequestWithURL:instagramURL completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
         
         NSDictionary *json = [NSJSONSerialization JSONObjectWithData:data options:0 error:nil];
         
