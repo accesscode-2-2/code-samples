@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="rtI-Rz-2aU">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="MDr-6D-XPg">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UT4-1c-yWx">
+                                <rect key="frame" x="259" y="550" width="83" height="30"/>
+                                <state key="normal" title="Camera Roll"/>
+                                <connections>
+                                    <action selector="cameraRollButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UVF-eb-ojU"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="UT4-1c-yWx" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9Wc-fS-N6f"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="UT4-1c-yWx" secondAttribute="bottom" constant="20" id="bHC-Pa-MaC"/>
+                            <constraint firstItem="MDr-6D-XPg" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="giv-Xy-CIF"/>
+                            <constraint firstItem="MDr-6D-XPg" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="pIs-bv-THw"/>
+                            <constraint firstAttribute="trailing" secondItem="MDr-6D-XPg" secondAttribute="trailing" id="tPN-Ni-e08"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="MDr-6D-XPg" secondAttribute="bottom" id="xop-Qa-Kqc"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="MDr-6D-XPg" id="1q5-sx-Tg7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="247" y="-190"/>
+        </scene>
+        <!--Delegation View Controller-->
+        <scene sceneID="KL4-Kc-TPf">
+            <objects>
+                <viewController id="rtI-Rz-2aU" customClass="DelegationViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="8wh-qk-kAn"/>
+                        <viewControllerLayoutGuide type="bottom" id="hIK-Pw-0oh"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="gsf-sX-2pN">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="txR-3T-FOC" customClass="SocialMediaView">
+                                <rect key="frame" x="40" y="40" width="520" height="520"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZlB-3H-rja">
+                                        <rect key="frame" x="241" y="300" width="38" height="30"/>
+                                        <state key="normal" title="share"/>
+                                        <connections>
+                                            <action selector="shareButtonTapped:" destination="txR-3T-FOC" eventType="touchUpInside" id="4ha-05-CSr"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ygM-XV-usC">
+                                        <rect key="frame" x="228" y="245" width="65" height="30"/>
+                                        <state key="normal" title="comment"/>
+                                        <connections>
+                                            <action selector="commentButtonTapped:" destination="txR-3T-FOC" eventType="touchUpInside" id="reD-yp-zTq"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ijb-m3-9FZ">
+                                        <rect key="frame" x="245" y="182" width="30" height="30"/>
+                                        <state key="normal" title="like"/>
+                                        <connections>
+                                            <action selector="likeButtonTapped:" destination="txR-3T-FOC" eventType="touchUpInside" id="7Er-dF-ccU"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="ygM-XV-usC" firstAttribute="centerX" secondItem="txR-3T-FOC" secondAttribute="centerX" id="8I9-Wa-rpG"/>
+                                    <constraint firstAttribute="width" secondItem="txR-3T-FOC" secondAttribute="height" multiplier="1:1" id="BBW-9X-jPX"/>
+                                    <constraint firstItem="ygM-XV-usC" firstAttribute="centerY" secondItem="txR-3T-FOC" secondAttribute="centerY" id="CY8-90-y9A"/>
+                                    <constraint firstItem="ygM-XV-usC" firstAttribute="top" secondItem="ijb-m3-9FZ" secondAttribute="bottom" constant="33" id="IS7-zS-isy"/>
+                                    <constraint firstItem="ZlB-3H-rja" firstAttribute="top" secondItem="ygM-XV-usC" secondAttribute="bottom" constant="25" id="aBw-zb-Ge5"/>
+                                    <constraint firstItem="ijb-m3-9FZ" firstAttribute="centerX" secondItem="txR-3T-FOC" secondAttribute="centerX" id="iaJ-ws-uGx"/>
+                                    <constraint firstItem="ZlB-3H-rja" firstAttribute="centerX" secondItem="txR-3T-FOC" secondAttribute="centerX" id="lFE-p0-3aF"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="txR-3T-FOC" firstAttribute="centerY" secondItem="gsf-sX-2pN" secondAttribute="centerY" id="Dpe-M3-mBn"/>
+                            <constraint firstItem="txR-3T-FOC" firstAttribute="leading" secondItem="gsf-sX-2pN" secondAttribute="leadingMargin" constant="20" id="Ru5-OH-4BY"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="txR-3T-FOC" secondAttribute="trailing" constant="20" id="Wrc-rH-hWr"/>
+                            <constraint firstItem="txR-3T-FOC" firstAttribute="centerX" secondItem="gsf-sX-2pN" secondAttribute="centerX" id="xQq-HJ-6QH"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="socialView" destination="txR-3T-FOC" id="V07-2q-vFw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Cn9-oC-bmz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="237" y="517"/>
+        </scene>
+    </scenes>
+</document>
