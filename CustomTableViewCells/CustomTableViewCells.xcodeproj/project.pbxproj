@@ -16,7 +16,6 @@
 		8D87E0D81BB4CA4100151B4F /* MikesTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D87E0D71BB4CA4100151B4F /* MikesTVC.m */; settings = {ASSET_TAGS = (); }; };
 		8D87E0DB1BB4D15A00151B4F /* MikeInstagramPost.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D87E0DA1BB4D15A00151B4F /* MikeInstagramPost.m */; settings = {ASSET_TAGS = (); }; };
 		8D87E0DE1BB4DB1900151B4F /* InstagramPostTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D87E0DD1BB4DB1900151B4F /* InstagramPostTableViewCell.m */; settings = {ASSET_TAGS = (); }; };
-		8DB6AA3B1BB59A060086433F /* InstagramTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8DB6AA3A1BB59A060086433F /* InstagramTableViewCell.xib */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,7 +35,6 @@
 		8D87E0DA1BB4D15A00151B4F /* MikeInstagramPost.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MikeInstagramPost.m; sourceTree = "<group>"; };
 		8D87E0DC1BB4DB1900151B4F /* InstagramPostTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InstagramPostTableViewCell.h; sourceTree = "<group>"; };
 		8D87E0DD1BB4DB1900151B4F /* InstagramPostTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InstagramPostTableViewCell.m; sourceTree = "<group>"; };
-		8DB6AA3A1BB59A060086433F /* InstagramTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InstagramTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,7 +77,6 @@
 				8D87E0D71BB4CA4100151B4F /* MikesTVC.m */,
 				8D87E0DC1BB4DB1900151B4F /* InstagramPostTableViewCell.h */,
 				8D87E0DD1BB4DB1900151B4F /* InstagramPostTableViewCell.m */,
-				8DB6AA3A1BB59A060086433F /* InstagramTableViewCell.xib */,
 				8D87E0C51BB4C2C000151B4F /* Main.storyboard */,
 				8D87E0C81BB4C2C000151B4F /* Assets.xcassets */,
 				8D87E0CA1BB4C2C000151B4F /* LaunchScreen.storyboard */,
@@ -154,7 +151,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8DB6AA3B1BB59A060086433F /* InstagramTableViewCell.xib in Resources */,
 				8D87E0CC1BB4C2C000151B4F /* LaunchScreen.storyboard in Resources */,
 				8D87E0C91BB4C2C000151B4F /* Assets.xcassets in Resources */,
 				8D87E0C71BB4C2C000151B4F /* Main.storyboard in Resources */,
