@@ -7,8 +7,14 @@
 //
 
 #import "InstagramPostHeaderView.h"
+#import "UIColor+Instagram.h"
 
 @implementation InstagramPostHeaderView
 
+- (void)awakeFromNib {
+    [super awakeFromNib];
+    [self.fullNameLabel setTextColor:[UIColor darkBlueColor]];
+    [self.usernameLabel setTextColor:[[UIColor darkBlueColor] colorWithAlphaComponent:0.7]];
+}
 
 @end

@@ -18,6 +18,7 @@
 @property (nonatomic) NSDictionary *caption;
 @property (nonatomic) NSString *imageURL;
 @property (nonatomic) NSString *avatarImageURL;
+@property (nonatomic) NSMutableArray <NSAttributedString *> *comments;
 
 - (instancetype)initWithJSON:(NSDictionary *)json;
 

@@ -6,7 +6,9 @@
 //  Copyright © 2015 Mike Kavouras. All rights reserved.
 //
 
+#import <UIKit/UIKit.h>
 #import "MikeInstagramPost.h"
+#import "UIColor+Instagram.h"
 
 @implementation MikeInstagramPost
 
@@ -24,12 +26,36 @@
         
         self.avatarImageURL = json[@"user"][@"profile_picture"];
         
+        self.comments = [[NSMutableArray alloc] init];
+        if (json[@"caption"]) {
+            [self.comments addObject:[self parseComment:json[@"caption"]]];
+        }
+        
+        for (NSDictionary *comment in json[@"comments"][@"data"]) {
+            [self.comments addObject:[self parseComment:comment]];
+        }
+        
         return self;
     }
     return nil;
 }
 
+- (NSMutableAttributedString *)parseComment:(NSDictionary *)json {
+    NSString *fromUsername = json[@"from"][@"username"];
+    NSString *text = json[@"text"];
+    
+    NSMutableAttributedString *resultString = [[NSMutableAttributedString alloc] initWithString:[NSString stringWithFormat:@"%@ %@ \n\n", fromUsername, text]];
+    
+    UIFont *font = [UIFont systemFontOfSize:13];
+    [resultString addAttribute:NSFontAttributeName value:font range:NSMakeRange(0, resultString.length)];
 
+    
+    UIFont *mediumFont = [UIFont systemFontOfSize:13 weight:UIFontWeightMedium];
+    [resultString addAttribute:NSFontAttributeName value:mediumFont range:NSMakeRange(0, fromUsername.length)];
+    [resultString addAttribute:NSForegroundColorAttributeName value:[UIColor darkBlueColor] range:NSMakeRange(0, fromUsername.length)];
+    
+    return resultString;
+}
 
 
 

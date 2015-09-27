@@ -20,6 +20,7 @@
 		8D87E0D81BB4CA4100151B4F /* MikesTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D87E0D71BB4CA4100151B4F /* MikesTVC.m */; settings = {ASSET_TAGS = (); }; };
 		8D87E0DB1BB4D15A00151B4F /* MikeInstagramPost.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D87E0DA1BB4D15A00151B4F /* MikeInstagramPost.m */; settings = {ASSET_TAGS = (); }; };
 		8D87E0DE1BB4DB1900151B4F /* InstagramPostTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D87E0DD1BB4DB1900151B4F /* InstagramPostTableViewCell.m */; settings = {ASSET_TAGS = (); }; };
+		8DA5B6F71BB796EC002908E5 /* UIColor+Instagram.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DA5B6F61BB796EC002908E5 /* UIColor+Instagram.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +46,8 @@
 		8D87E0DA1BB4D15A00151B4F /* MikeInstagramPost.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MikeInstagramPost.m; sourceTree = "<group>"; };
 		8D87E0DC1BB4DB1900151B4F /* InstagramPostTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InstagramPostTableViewCell.h; sourceTree = "<group>"; };
 		8D87E0DD1BB4DB1900151B4F /* InstagramPostTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InstagramPostTableViewCell.m; sourceTree = "<group>"; };
+		8DA5B6F51BB796EC002908E5 /* UIColor+Instagram.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Instagram.h"; sourceTree = "<group>"; };
+		8DA5B6F61BB796EC002908E5 /* UIColor+Instagram.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Instagram.m"; sourceTree = "<group>"; };
 		B7E2885413157D68CBC03272 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -95,6 +98,8 @@
 				8D6F92461BB73D32007B30A9 /* InstagramPostHeaderView.h */,
 				8D6F92471BB73D32007B30A9 /* InstagramPostHeaderView.m */,
 				8D6F92491BB73D62007B30A9 /* InstagramPostHeaderView.xib */,
+				8DA5B6F51BB796EC002908E5 /* UIColor+Instagram.h */,
+				8DA5B6F61BB796EC002908E5 /* UIColor+Instagram.m */,
 				8D87E0C51BB4C2C000151B4F /* Main.storyboard */,
 				8D87E0C81BB4C2C000151B4F /* Assets.xcassets */,
 				8D87E0CA1BB4C2C000151B4F /* LaunchScreen.storyboard */,
@@ -240,6 +245,7 @@
 				8D87E0D51BB4C62800151B4F /* APIManager.m in Sources */,
 				8D87E0DB1BB4D15A00151B4F /* MikeInstagramPost.m in Sources */,
 				8D87E0DE1BB4DB1900151B4F /* InstagramPostTableViewCell.m in Sources */,
+				8DA5B6F71BB796EC002908E5 /* UIColor+Instagram.m in Sources */,
 				8D87E0C11BB4C2C000151B4F /* AppDelegate.m in Sources */,
 				8D87E0BE1BB4C2C000151B4F /* main.m in Sources */,
 				8D87E0D81BB4CA4100151B4F /* MikesTVC.m in Sources */,

@@ -11,6 +11,7 @@
 #import "APIManager.h"
 #import "InstagramPostTableViewCell.h"
 #import "InstagramPostHeaderView.h"
+#import "UIColor+Instagram.h"
 #import <AFNetworking/AFNetworking.h>
 #import <SDWebImage/UIImageView+WebCache.h>
 
@@ -21,14 +22,11 @@
 @end
 
 @implementation MikesTVC
-- (IBAction)refreshButtonTapped:(id)sender {
-    [self fetchInstagramData];
-}
 
 - (void)fetchInstagramData {
     
     // create an instagram url
-    NSString *urlString = @"https://api.instagram.com/v1/tags/goldenretriever/media/recent?client_id=ac0ee52ebb154199bfabfb15b498c067";
+    NSString *urlString = @"https://api.instagram.com/v1/tags/nofilter/media/recent?client_id=ac0ee52ebb154199bfabfb15b498c067";
     
     AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
     
@@ -86,9 +84,11 @@
  
     // grab the header nib from the main bundle
     UINib *headerNib = [UINib nibWithNibName:@"InstagramPostHeaderView" bundle:nil];
+
     
     // register the header nib for the header identifier
     [self.tableView registerNib:headerNib forHeaderFooterViewReuseIdentifier:@"InstagramHeaderIdentifier"];
+    
 }
 
 #pragma mark - Table view data source
@@ -107,11 +107,19 @@
     headerView.backgroundView.backgroundColor = [UIColor whiteColor];
     
     // set the usernameLabel.text to the posts username;
-    headerView.usernameLabel.text = post.username;
+    headerView.usernameLabel.text = [NSString stringWithFormat:@"@%@", post.username];
+    headerView.fullNameLabel.text = post.fullName;
     
     // make the avatar a circle
     headerView.avatarImageView.layer.cornerRadius = 15.0;
     headerView.avatarImageView.layer.masksToBounds = YES;
+    headerView.avatarImageView.layer.borderColor = [UIColor lightGrayColor].CGColor;
+    headerView.avatarImageView.layer.borderWidth = 0.5;
+    
+    
+    UIView *line = [[UIView alloc] initWithFrame:CGRectMake(0, 50, self.view.frame.size.width, 0.5)];
+    line.backgroundColor = [[UIColor lightGrayColor] colorWithAlphaComponent:0.3];
+    [headerView addSubview:line];
     
     // create a url from the post avatartImageURL (originally a string)
     NSURL *avatarURL = [NSURL URLWithString:post.avatarImageURL];
@@ -143,16 +151,15 @@
     
     MikeInstagramPost *post = self.searchResults[indexPath.section];
     
-    cell.likeCountLabel.text = [NSString stringWithFormat:@"Like: %ld", post.likeCount];
+    cell.likeCountLabel.text = [NSString stringWithFormat:@"%ld Likes", post.likeCount];
+    [cell.likeCountLabel setTextColor:[UIColor darkBlueColor]];
     
-    cell.tagCountLabel.text = [NSString stringWithFormat:@"Tags: %ld", post.tags.count];
-    
-    cell.captionLabel.text = post.caption[@"text"];
+    NSMutableAttributedString *commentsString = [[NSMutableAttributedString alloc] init];
+    for (NSMutableAttributedString *comment in post.comments) {
+        [commentsString appendAttributedString:comment];
+    }
+    cell.commentsLabel.attributedText = commentsString;
 
-//    NSData *data = [NSData dataWithContentsOfURL:url];
-//    UIImage *image = [UIImage imageWithData:data];
-//    
-//    cell.userMediaImageView.image = image;
     
     NSURL *url = [NSURL URLWithString:post.imageURL];
 
@@ -163,11 +170,9 @@
     return cell;
 }
 
-
-
-
-
-
+- (UIStatusBarStyle)preferredStatusBarStyle {
+    return UIStatusBarStyleLightContent;
+}
 
 
 @end
