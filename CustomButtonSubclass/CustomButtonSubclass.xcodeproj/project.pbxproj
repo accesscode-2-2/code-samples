@@ -1,0 +1,525 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8DF9A5561BB84350005291C5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DF9A5551BB84350005291C5 /* main.m */; };
+		8DF9A5591BB84350005291C5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DF9A5581BB84350005291C5 /* AppDelegate.m */; };
+		8DF9A55C1BB84350005291C5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DF9A55B1BB84350005291C5 /* ViewController.m */; };
+		8DF9A55F1BB84350005291C5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8DF9A55D1BB84350005291C5 /* Main.storyboard */; };
+		8DF9A5611BB84350005291C5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8DF9A5601BB84350005291C5 /* Assets.xcassets */; };
+		8DF9A5641BB84350005291C5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8DF9A5621BB84350005291C5 /* LaunchScreen.storyboard */; };
+		8DF9A56F1BB84350005291C5 /* CustomButtonSubclassTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DF9A56E1BB84350005291C5 /* CustomButtonSubclassTests.m */; };
+		8DF9A57A1BB84350005291C5 /* CustomButtonSubclassUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DF9A5791BB84350005291C5 /* CustomButtonSubclassUITests.m */; };
+		8DF9A5891BB844CD005291C5 /* ABBButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DF9A5881BB844CD005291C5 /* ABBButton.m */; settings = {ASSET_TAGS = (); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8DF9A56B1BB84350005291C5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8DF9A5491BB84350005291C5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8DF9A5501BB84350005291C5;
+			remoteInfo = CustomButtonSubclass;
+		};
+		8DF9A5761BB84350005291C5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8DF9A5491BB84350005291C5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8DF9A5501BB84350005291C5;
+			remoteInfo = CustomButtonSubclass;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8DF9A5511BB84350005291C5 /* CustomButtonSubclass.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CustomButtonSubclass.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8DF9A5551BB84350005291C5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8DF9A5571BB84350005291C5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		8DF9A5581BB84350005291C5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		8DF9A55A1BB84350005291C5 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		8DF9A55B1BB84350005291C5 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		8DF9A55E1BB84350005291C5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8DF9A5601BB84350005291C5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8DF9A5631BB84350005291C5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8DF9A5651BB84350005291C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8DF9A56A1BB84350005291C5 /* CustomButtonSubclassTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CustomButtonSubclassTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8DF9A56E1BB84350005291C5 /* CustomButtonSubclassTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomButtonSubclassTests.m; sourceTree = "<group>"; };
+		8DF9A5701BB84350005291C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8DF9A5751BB84350005291C5 /* CustomButtonSubclassUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CustomButtonSubclassUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8DF9A5791BB84350005291C5 /* CustomButtonSubclassUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomButtonSubclassUITests.m; sourceTree = "<group>"; };
+		8DF9A57B1BB84350005291C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8DF9A5871BB844CD005291C5 /* ABBButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ABBButton.h; sourceTree = "<group>"; };
+		8DF9A5881BB844CD005291C5 /* ABBButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ABBButton.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8DF9A54E1BB84350005291C5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8DF9A5671BB84350005291C5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8DF9A5721BB84350005291C5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8DF9A5481BB84350005291C5 = {
+			isa = PBXGroup;
+			children = (
+				8DF9A5531BB84350005291C5 /* CustomButtonSubclass */,
+				8DF9A56D1BB84350005291C5 /* CustomButtonSubclassTests */,
+				8DF9A5781BB84350005291C5 /* CustomButtonSubclassUITests */,
+				8DF9A5521BB84350005291C5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8DF9A5521BB84350005291C5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8DF9A5511BB84350005291C5 /* CustomButtonSubclass.app */,
+				8DF9A56A1BB84350005291C5 /* CustomButtonSubclassTests.xctest */,
+				8DF9A5751BB84350005291C5 /* CustomButtonSubclassUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8DF9A5531BB84350005291C5 /* CustomButtonSubclass */ = {
+			isa = PBXGroup;
+			children = (
+				8DF9A5571BB84350005291C5 /* AppDelegate.h */,
+				8DF9A5581BB84350005291C5 /* AppDelegate.m */,
+				8DF9A55A1BB84350005291C5 /* ViewController.h */,
+				8DF9A55B1BB84350005291C5 /* ViewController.m */,
+				8DF9A5871BB844CD005291C5 /* ABBButton.h */,
+				8DF9A5881BB844CD005291C5 /* ABBButton.m */,
+				8DF9A55D1BB84350005291C5 /* Main.storyboard */,
+				8DF9A5601BB84350005291C5 /* Assets.xcassets */,
+				8DF9A5621BB84350005291C5 /* LaunchScreen.storyboard */,
+				8DF9A5651BB84350005291C5 /* Info.plist */,
+				8DF9A5541BB84350005291C5 /* Supporting Files */,
+			);
+			path = CustomButtonSubclass;
+			sourceTree = "<group>";
+		};
+		8DF9A5541BB84350005291C5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8DF9A5551BB84350005291C5 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8DF9A56D1BB84350005291C5 /* CustomButtonSubclassTests */ = {
+			isa = PBXGroup;
+			children = (
+				8DF9A56E1BB84350005291C5 /* CustomButtonSubclassTests.m */,
+				8DF9A5701BB84350005291C5 /* Info.plist */,
+			);
+			path = CustomButtonSubclassTests;
+			sourceTree = "<group>";
+		};
+		8DF9A5781BB84350005291C5 /* CustomButtonSubclassUITests */ = {
+			isa = PBXGroup;
+			children = (
+				8DF9A5791BB84350005291C5 /* CustomButtonSubclassUITests.m */,
+				8DF9A57B1BB84350005291C5 /* Info.plist */,
+			);
+			path = CustomButtonSubclassUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8DF9A5501BB84350005291C5 /* CustomButtonSubclass */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8DF9A57E1BB84350005291C5 /* Build configuration list for PBXNativeTarget "CustomButtonSubclass" */;
+			buildPhases = (
+				8DF9A54D1BB84350005291C5 /* Sources */,
+				8DF9A54E1BB84350005291C5 /* Frameworks */,
+				8DF9A54F1BB84350005291C5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CustomButtonSubclass;
+			productName = CustomButtonSubclass;
+			productReference = 8DF9A5511BB84350005291C5 /* CustomButtonSubclass.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8DF9A5691BB84350005291C5 /* CustomButtonSubclassTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8DF9A5811BB84350005291C5 /* Build configuration list for PBXNativeTarget "CustomButtonSubclassTests" */;
+			buildPhases = (
+				8DF9A5661BB84350005291C5 /* Sources */,
+				8DF9A5671BB84350005291C5 /* Frameworks */,
+				8DF9A5681BB84350005291C5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8DF9A56C1BB84350005291C5 /* PBXTargetDependency */,
+			);
+			name = CustomButtonSubclassTests;
+			productName = CustomButtonSubclassTests;
+			productReference = 8DF9A56A1BB84350005291C5 /* CustomButtonSubclassTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		8DF9A5741BB84350005291C5 /* CustomButtonSubclassUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8DF9A5841BB84350005291C5 /* Build configuration list for PBXNativeTarget "CustomButtonSubclassUITests" */;
+			buildPhases = (
+				8DF9A5711BB84350005291C5 /* Sources */,
+				8DF9A5721BB84350005291C5 /* Frameworks */,
+				8DF9A5731BB84350005291C5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8DF9A5771BB84350005291C5 /* PBXTargetDependency */,
+			);
+			name = CustomButtonSubclassUITests;
+			productName = CustomButtonSubclassUITests;
+			productReference = 8DF9A5751BB84350005291C5 /* CustomButtonSubclassUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8DF9A5491BB84350005291C5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "Michael Kavouras";
+				TargetAttributes = {
+					8DF9A5501BB84350005291C5 = {
+						CreatedOnToolsVersion = 7.0;
+					};
+					8DF9A5691BB84350005291C5 = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = 8DF9A5501BB84350005291C5;
+					};
+					8DF9A5741BB84350005291C5 = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = 8DF9A5501BB84350005291C5;
+					};
+				};
+			};
+			buildConfigurationList = 8DF9A54C1BB84350005291C5 /* Build configuration list for PBXProject "CustomButtonSubclass" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8DF9A5481BB84350005291C5;
+			productRefGroup = 8DF9A5521BB84350005291C5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8DF9A5501BB84350005291C5 /* CustomButtonSubclass */,
+				8DF9A5691BB84350005291C5 /* CustomButtonSubclassTests */,
+				8DF9A5741BB84350005291C5 /* CustomButtonSubclassUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8DF9A54F1BB84350005291C5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8DF9A5641BB84350005291C5 /* LaunchScreen.storyboard in Resources */,
+				8DF9A5611BB84350005291C5 /* Assets.xcassets in Resources */,
+				8DF9A55F1BB84350005291C5 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8DF9A5681BB84350005291C5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8DF9A5731BB84350005291C5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8DF9A54D1BB84350005291C5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8DF9A55C1BB84350005291C5 /* ViewController.m in Sources */,
+				8DF9A5591BB84350005291C5 /* AppDelegate.m in Sources */,
+				8DF9A5561BB84350005291C5 /* main.m in Sources */,
+				8DF9A5891BB844CD005291C5 /* ABBButton.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8DF9A5661BB84350005291C5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8DF9A56F1BB84350005291C5 /* CustomButtonSubclassTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8DF9A5711BB84350005291C5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8DF9A57A1BB84350005291C5 /* CustomButtonSubclassUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8DF9A56C1BB84350005291C5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8DF9A5501BB84350005291C5 /* CustomButtonSubclass */;
+			targetProxy = 8DF9A56B1BB84350005291C5 /* PBXContainerItemProxy */;
+		};
+		8DF9A5771BB84350005291C5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8DF9A5501BB84350005291C5 /* CustomButtonSubclass */;
+			targetProxy = 8DF9A5761BB84350005291C5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8DF9A55D1BB84350005291C5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8DF9A55E1BB84350005291C5 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8DF9A5621BB84350005291C5 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8DF9A5631BB84350005291C5 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8DF9A57C1BB84350005291C5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		8DF9A57D1BB84350005291C5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8DF9A57F1BB84350005291C5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = CustomButtonSubclass/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mikekavouras.CustomButtonSubclass;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		8DF9A5801BB84350005291C5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = CustomButtonSubclass/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mikekavouras.CustomButtonSubclass;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		8DF9A5821BB84350005291C5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = CustomButtonSubclassTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mikekavouras.CustomButtonSubclassTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CustomButtonSubclass.app/CustomButtonSubclass";
+			};
+			name = Debug;
+		};
+		8DF9A5831BB84350005291C5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = CustomButtonSubclassTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mikekavouras.CustomButtonSubclassTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CustomButtonSubclass.app/CustomButtonSubclass";
+			};
+			name = Release;
+		};
+		8DF9A5851BB84350005291C5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = CustomButtonSubclassUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mikekavouras.CustomButtonSubclassUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = CustomButtonSubclass;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		8DF9A5861BB84350005291C5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = CustomButtonSubclassUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mikekavouras.CustomButtonSubclassUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = CustomButtonSubclass;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8DF9A54C1BB84350005291C5 /* Build configuration list for PBXProject "CustomButtonSubclass" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8DF9A57C1BB84350005291C5 /* Debug */,
+				8DF9A57D1BB84350005291C5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8DF9A57E1BB84350005291C5 /* Build configuration list for PBXNativeTarget "CustomButtonSubclass" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8DF9A57F1BB84350005291C5 /* Debug */,
+				8DF9A5801BB84350005291C5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		8DF9A5811BB84350005291C5 /* Build configuration list for PBXNativeTarget "CustomButtonSubclassTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8DF9A5821BB84350005291C5 /* Debug */,
+				8DF9A5831BB84350005291C5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		8DF9A5841BB84350005291C5 /* Build configuration list for PBXNativeTarget "CustomButtonSubclassUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8DF9A5851BB84350005291C5 /* Debug */,
+				8DF9A5861BB84350005291C5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8DF9A5491BB84350005291C5 /* Project object */;
+}
