@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9052" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="LaV-oB-uUh">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9040"/>
+    </dependencies>
+    <scenes>
+        <!--Root View Controller-->
+        <scene sceneID="kag-xa-7M7">
+            <objects>
+                <tableViewController id="nfl-KC-jGN" customClass="SnackTableViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="93i-3c-rbo">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SnackCellIdentifier" textLabel="m5F-SX-46Z" detailTextLabel="HSe-bQ-yJy" style="IBUITableViewCellStyleSubtitle" id="Yl2-Zi-TlL">
+                                <rect key="frame" x="0.0" y="92" width="600" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Yl2-Zi-TlL" id="dxi-Rz-Av1">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="m5F-SX-46Z">
+                                            <rect key="frame" x="15" y="5" width="32" height="20"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <animations/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="HSe-bQ-yJy">
+                                            <rect key="frame" x="15" y="25" width="41" height="14"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <animations/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <animations/>
+                                </tableViewCellContentView>
+                                <animations/>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="nfl-KC-jGN" id="3Mi-pQ-3dn"/>
+                            <outlet property="delegate" destination="nfl-KC-jGN" id="DTa-fc-FfN"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Root View Controller" id="1hX-BL-9Pf">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="gH1-iJ-JzL">
+                            <connections>
+                                <segue destination="MFU-44-hTE" kind="presentation" id="tj5-O0-kdw"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uo1-PZ-IdP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="381" y="-68"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="nqY-su-hwJ">
+            <objects>
+                <viewController id="MFU-44-hTE" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="A5Z-5K-Bz5"/>
+                        <viewControllerLayoutGuide type="bottom" id="OUw-5Q-cBy"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="iD4-Ng-Cud">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HNI-Or-9JS">
+                                <rect key="frame" x="252" y="20" width="97" height="30"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="97" id="cRP-Mp-czc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="flavor" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cap-0d-ifv">
+                                <rect key="frame" x="252" y="58" width="97" height="30"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="97" id="zQW-6a-lFb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="# calories" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4an-iS-Kct">
+                                <rect key="frame" x="252" y="96" width="97" height="30"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="97" id="5Vc-ht-lXk"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8FH-4G-KBa">
+                                <rect key="frame" x="254" y="134" width="92" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Create Snack"/>
+                                <connections>
+                                    <action selector="createSnackButtonTapped:" destination="MFU-44-hTE" eventType="touchUpInside" id="4fi-RA-dRo"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="4an-iS-Kct" firstAttribute="centerX" secondItem="iD4-Ng-Cud" secondAttribute="centerX" id="15N-Pl-276"/>
+                            <constraint firstItem="8FH-4G-KBa" firstAttribute="centerX" secondItem="iD4-Ng-Cud" secondAttribute="centerX" id="8g9-9s-K5T"/>
+                            <constraint firstItem="HNI-Or-9JS" firstAttribute="top" secondItem="A5Z-5K-Bz5" secondAttribute="bottom" id="8rg-Rf-eiw"/>
+                            <constraint firstItem="cap-0d-ifv" firstAttribute="centerX" secondItem="iD4-Ng-Cud" secondAttribute="centerX" id="GLL-75-87F"/>
+                            <constraint firstItem="4an-iS-Kct" firstAttribute="top" secondItem="cap-0d-ifv" secondAttribute="bottom" constant="8" id="bjH-EQ-KWE"/>
+                            <constraint firstItem="cap-0d-ifv" firstAttribute="top" secondItem="HNI-Or-9JS" secondAttribute="bottom" constant="8" id="d83-mC-njv"/>
+                            <constraint firstItem="8FH-4G-KBa" firstAttribute="top" secondItem="4an-iS-Kct" secondAttribute="bottom" constant="8" id="hkP-wZ-h2X"/>
+                            <constraint firstItem="HNI-Or-9JS" firstAttribute="centerX" secondItem="iD4-Ng-Cud" secondAttribute="centerX" id="wqK-Bg-rVY"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="caloriesTextField" destination="4an-iS-Kct" id="Yy5-eu-a8f"/>
+                        <outlet property="flavorTextField" destination="cap-0d-ifv" id="JZF-Lz-L3G"/>
+                        <outlet property="nameTextField" destination="HNI-Or-9JS" id="49o-71-ehf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JaR-P0-5pZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1063" y="-68"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="R4Y-4c-EiL">
+            <objects>
+                <navigationController id="LaV-oB-uUh" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="9tF-rQ-Pq2">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="nfl-KC-jGN" kind="relationship" relationship="rootViewController" id="BI7-99-OHP"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pPt-ay-1S9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-438" y="-69"/>
+        </scene>
+    </scenes>
+</document>
