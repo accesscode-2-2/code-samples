@@ -21,25 +21,18 @@
 @implementation ViewController
 
 - (IBAction)createSnackButtonTapped:(id)sender {
+    
     AppDelegate *delegate = [UIApplication sharedApplication].delegate;
     
     Snack *newSnack = [NSEntityDescription insertNewObjectForEntityForName:[Snack entityName]inManagedObjectContext:delegate.managedObjectContext];
     
     newSnack.name = self.nameTextField.text;
-    
     newSnack.calories = [NSNumber numberWithInteger:[self.caloriesTextField.text integerValue]];
-    
     newSnack.flavor = self.flavorTextField.text;
     
     [delegate saveContext];
     
     [self dismissViewControllerAnimated:YES completion:nil];
-}
-
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    
-  
 }
 
 - (void)saveNewSnack {
