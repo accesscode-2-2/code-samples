@@ -34,6 +34,9 @@ A wide variety of code samples taken directly from in-class lectures.
 [Custom Button](https://github.com/accesscode-2-2/code-samples/tree/master/CustomButtonSubclass) 
 [Sliders](https://github.com/accesscode-2-2/code-samples/tree/master/sliders)
 
+**Gestures**  
+[Gestures](https://github.com/accesscode-2-2/code-samples/tree/master/Gestures)
+
 **Networking/API**  
 [Learn API](https://github.com/accesscode-2-2/code-samples/tree/master/LearnAPI)  
 [MapIt](https://github.com/accesscode-2-2/code-samples/tree/master/MapIt)   
