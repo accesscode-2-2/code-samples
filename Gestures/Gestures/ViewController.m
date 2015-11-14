@@ -48,6 +48,7 @@
 
 - (void)addPinchGesture {
     UIPinchGestureRecognizer *gesture = [[UIPinchGestureRecognizer alloc] initWithTarget:self action:@selector(pinching:)];
+    [gesture addTa
     
     [self.myView addGestureRecognizer:gesture];
 }
