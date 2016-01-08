@@ -69,3 +69,5 @@ A wide variety of code samples taken directly from in-class lectures.
 [Stopwatch](https://github.com/accesscode-2-2/code-samples/tree/master/StopWatchDemo)  
 [Countdown](https://github.com/accesscode-2-2/code-samples/tree/master/TimerProject)
 
+**Algorithms & Data Structures**
+[Unit4](https://github.com/accesscode-2-2/code-samples/tree/master/Unit4)
